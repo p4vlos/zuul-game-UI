@@ -7,8 +7,8 @@ import java.util.HashMap;
 /**
  * A Player class. The player knows all about how this player responds to commands.
  * Arguably some of these actions might be better places in a game specific class in
- * zuul.mygame.
- * @author rej
+ * assignment2.pkg.mygame
+ * @author Pavlos Nicolaou
  */
 public class Player {
     private final String name;
@@ -35,7 +35,7 @@ public class Player {
         currentRoom = room;
         items = new HashMap<>();
     }
-
+    
     /** @return the name */
     public String getName() { return name; }
 
@@ -54,13 +54,13 @@ public class Player {
     /**
      * Is something too heavy to hold
      * @param item the item
-     * @return true iff too heavy
+     * @return true if too heavy
      */
     public boolean tooHeavy(Item item) { return (item.getWeight() + totalWeight > getMaxWeight()); }
 
     /**
      * @param desc the name of the item
-     * @return true iff the player has this item
+     * @return true if the player has this item
      */
     public boolean hasItem(String desc) { return items.containsKey(desc); }
     

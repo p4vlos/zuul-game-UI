@@ -1,5 +1,6 @@
 package assignment2.command;
 
+import assignment2.FXMLDocumentController;
 import assignment2.Player;
 
 /**
@@ -19,7 +20,7 @@ import assignment2.Player;
  * @author  Michael Kolling and David J. Barnes
  */
 
-public abstract class Command
+public abstract class Command extends FXMLDocumentController
 {
     private String commandWord;
     private String secondWord;

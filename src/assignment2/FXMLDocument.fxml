@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.FXMLDocumentController">
+   <left>
+      <Pane prefHeight="92.0" prefWidth="95.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="dropBtn" layoutX="24.0" layoutY="22.0" mnemonicParsing="false" onAction="#dropClicked" text="Drop" />
+            <Button fx:id="takeBtn" layoutX="24.0" layoutY="57.0" mnemonicParsing="false" onAction="#takeClicked" text="Take" />
+            <Button fx:id="giveBtn" layoutX="25.0" layoutY="95.0" mnemonicParsing="false" onAction="#giveClicked" text="Give" />
+            <Button fx:id="helpBtn" layoutX="24.0" layoutY="131.0" mnemonicParsing="false" onAction="#helpClicked" text="Help" />
+         </children>
+      </Pane>
+   </left>
+   <bottom>
+      <Pane prefHeight="89.0" prefWidth="583.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="northBtn" layoutX="259.0" layoutY="14.0" mnemonicParsing="false" onAction="#northClicked" text="Go North" />
+            <Button fx:id="WestBtn" layoutX="187.0" layoutY="41.0" mnemonicParsing="false" onAction="#westClicked" text="Go West" />
+            <Button fx:id="southBtn" layoutX="258.0" layoutY="41.0" mnemonicParsing="false" onAction="#southClicked" text="Go South" />
+            <Button fx:id="eastBtn" layoutX="333.0" layoutY="41.0" mnemonicParsing="false" onAction="#eastClicked" text="Go East" />
+         </children>
+      </Pane>
+   </bottom>
+   <right>
+      <Pane prefHeight="207.0" prefWidth="78.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="CloseBtn" layoutX="13.0" layoutY="24.0" mnemonicParsing="false" onAction="#exitGame" text="Close" />
+         </children>
+      </Pane>
+   </right>
+   <center>
+      <Pane prefHeight="225.0" prefWidth="343.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="textArea" layoutX="14.0" layoutY="23.0" prefHeight="201.0" prefWidth="342.0" wrapText="true" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -10,7 +10,7 @@ import assignment2.command.Command;
 
 /**
  * Command to get help
- * @author rej
+ * @author Pavlos Nicolaou
  */
 public class HELPcommand extends Command {
     
